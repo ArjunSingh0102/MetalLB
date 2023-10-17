@@ -481,7 +481,7 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
     spec:
       protocol: layer2
       addresses:
-      - 192.168.123.60 - 192.168.123.254
+      - 192.168.123.65 - 192.168.123.254
 ```
 ![Alt text](images/addre.png)
 ---
