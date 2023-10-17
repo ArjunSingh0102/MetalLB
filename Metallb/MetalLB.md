@@ -97,6 +97,9 @@ In the bare metal deployment kubernetes does not provide the functionality of cr
 ```bash
     echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
+```bash
+    sudo apt-get update
+  ``` 
  - This command echoes the repository line "deb https://apt.kubernetes.io/ kubernetes-xenial main" into the kubernetes.list file using sudo tee, effectively adding the Kubernetes repository to the system's package sources. It requires superuser privileges for write access to the system file.
 
 ![Alt text](images/list.png)
@@ -122,7 +125,7 @@ In the bare metal deployment kubernetes does not provide the functionality of cr
    **Install vim text editor:**
 
   ```bash
-  sudo apt install vim
+  sudo apt-get install vim
   ```
  - The command sudo apt install vim is used to install the Vim text editor on a Debian-based Linux system. It requests superuser privileges (sudo) to execute the installation of Vim.
 
@@ -403,7 +406,7 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
   The **sipcalc** command is a tool used for calculating various properties of IP addresses and subnets
     
   ```bash
-    sudo apt install sipcalc
+    sudo apt-get install sipcalc
   ```
 - This command installs the "sipcalc" utility on a Debian-based Linux system, which is used for calculating IP network parameters, with superuser privileges provided by sudo.
 
