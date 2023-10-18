@@ -44,6 +44,9 @@ In the bare metal deployment kubernetes does not provide the functionality of cr
 ```bash
     sudo apt-get update
 ```
+```bash
+    sudo apt-get upgrade
+```
  - sudo apt-get update is a command in Debian-based Linux systems used to refresh the local package repository information, ensuring the system has the latest data about available software packages and their versions.
 
 ![Alt text](images/update.png)
