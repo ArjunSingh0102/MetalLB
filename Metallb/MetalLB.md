@@ -454,17 +454,17 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
   sudo vim addresspool.yaml
 ``` 
   - The command sudo vim addresspool.yaml opens the "addresspool.yaml" file for editing with superuser privileges using the Vim text editor.
-  ```yaml
- 
-    apiVersion: metallb.io/v1beta1
-    kind: AddressPool
-    metadata:
-      name: doc-example-cidr
-      namespace: metallb
-    spec:
-      protocol: layer2
-      addresses:
-      - 192.168.123.65 - 192.168.123.254
+
+```yaml
+ apiVersion: metallb.io/v1beta1
+kind: AddressPool
+metadata:
+  name: doc-example-cidr
+spec:
+  protocol: layer2
+  addresses:
+    - 192.168.123.2/24
+
 ```
 ![Alt text](images/addre.png)
 ---
