@@ -436,7 +436,7 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
 ----
 
   ```bash
-    kubectl get pods
+      kubectl get pods
   ```
 - The command kubectl get pods is used in Kubernetes to list all the pods running in the current namespace, providing information about their current status and health.
 
@@ -456,7 +456,7 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
   - The command sudo vim addresspool.yaml opens the "addresspool.yaml" file for editing with superuser privileges using the Vim text editor.
 
 ```yaml
- apiVersion: metallb.io/v1beta1
+apiVersion: metallb.io/v1beta1
 kind: AddressPool
 metadata:
   name: doc-example-cidr
@@ -515,10 +515,6 @@ spec:
   MetalLB is now **set up** in your Kubernetes cluster running on Ubuntu. It's helping to distribute traffic and make your applications accessible through the IP you've configured
     
 ![Alt text](images/ff.png)
-
-```bash
-    reboot
-```
 
   ----
     
