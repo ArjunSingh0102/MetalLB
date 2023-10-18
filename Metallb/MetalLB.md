@@ -533,6 +533,10 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
     
 ![Alt text](images/ff.png)
 
+```bash
+    reboot
+```
+
   ----
     
     
