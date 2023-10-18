@@ -325,28 +325,8 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
 
 ![Alt text](images/calicopod.png)
    
-
-
-
 ---
-    
-  **Step 7 :** **Join Worker Nodes:**
-   If you have worker nodes, you can join them to the cluster using the token generated during kubeadm init on the master node.
-    
-  But Before join the worker node we have to perform all the command  which is given above (only except **calico** or **initialize** command because we have to run this command on master node)
-    
-  **Running this command on Worker node:**
-    
-  ```bash
-    kubeadm join 192.168.123.65:6443 --token dklyqu.yl9o102yo1wfkh25 --discovery-token-ca-cert-hash sha256:2431224191117bafeefce7c3274d94g5hg58a1be7aac4fdb1cc020
-  ```
-  - This command is used to join a Kubernetes node to an existing cluster. It provides the necessary information, such as the cluster's control plane endpoint (192.168.123.65:6443), an authentication token, and the CA certificate hash, to allow the new node to connect and become part of the cluster.
-
-  ![Alt text](images/optional.png)
-
----
-    
-    
+      
   ### **[[b] . Install MetalLB](https://64dc91a6ec22134a66be2ca2--remarkable-meringue-804b9a.netlify.app/#/?id=b-install-metallb)**
     
   MetalLB is a load balancer implementation for bare metal Kubernetes clusters. It provides a network load balancer implementation for services that use the type LoadBalancer.
@@ -512,7 +492,7 @@ Calico.yaml is not described due to it being in long code. Its yaml file is atta
 
 ---
     
-**Step 8: Deploy a sample nginx application:**
+**Step 7: Deploy a sample nginx application:**
     
 ```bash
     kubectl create deploy nginx --image nginx
